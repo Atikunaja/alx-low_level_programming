@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main  program that prints the outcome of a string
  * Return:0
