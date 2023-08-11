@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main C program that print exactly a string
+ * main C program that puts a string
  * Return: Always 0 (Success)
  */
 int main(void)
