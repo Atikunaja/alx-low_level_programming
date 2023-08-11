@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main C program that puts a string
+ * main - Entry point as the main function
  * Return: Always 0 (Success)
  */
 int main(void)
