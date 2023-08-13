@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main  - Entry point of a function
+ * main  - A program that prints all single digit numbers of base ten
  * Return  :  0 (Success)
  */
-int digit(void)
+int main(void)
 {
 	int  digit  = 0;
 
