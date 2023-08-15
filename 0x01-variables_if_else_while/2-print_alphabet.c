@@ -1,7 +1,7 @@
 #include <stdio.h>
 
  /**
-  * main - Program that prints alphabet in lower case
+  * main - Entry points of a function
   *
   * Return: 0 (Success)
   */
@@ -10,7 +10,7 @@ int main(void)
 
 {
 
-	char x;
+	int x;
 
 	for (x = 'a'; x <= 'z'; x++)
 	{
