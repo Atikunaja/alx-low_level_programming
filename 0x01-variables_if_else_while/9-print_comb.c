@@ -1,38 +1,20 @@
 #include <stdio.h>
 /**
- * main - a program that prints all possible combinations
- * Return: 0 (Success)
- */
+* main - prints all possible combinations of single-digit numbers
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int ones = '0';
-	int tens = '0';
-	int hundreds = '0';
-
-	for (hundreds = '0'; hundreds <= '9'; hundreds++)
-	{
-	for (tens = '0'; tens <= '9'; tens++)
-	{
-	for (ones = '0'; ones <= '9'; ones++)
-	{
-		if (!((ones == tens) || (tens == hundreds) || (tens  > ones) || (hundreds > tens)))
-		{
-			putchar(hundreds);
-			putchar(tens);
-			putchar(ones);
-			{
-				if (!((ones == '9' && hundreds =='7'&& tens == '6'))
-				
-				{
-
-					putchar(',');
-					putchar(' ');
-				}
-			}
-		}
-	}
-	}
-	}
-	putchar('\n');
-	return (0);
+int n;
+for (n = 48; n < 58; n++)
+{
+putchar(n);
+if (n != 57)
+{
+putchar(',');
+putchar(' ');
+}
+}
+putchar('\n');
+return (0);
 }
