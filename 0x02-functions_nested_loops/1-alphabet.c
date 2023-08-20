@@ -1,22 +1,22 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * print_alphabet - A program that prints alphabet in lowercase
+ * main - Prints alphabet in lowercase.
  *
- * Return: Always 0
+ * Return: Always 0.
  */
 
-int main(void)
+void print_alphabet(void);
 {
 
-	void print_alphabet(void)
+	char letter;
 
-		char ch = 'a';
-
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		putchar('a');
-		putchar('\n');
+		putchar(letter);
 	}
+	putchar('\n');
+
 	return (0);
 }
