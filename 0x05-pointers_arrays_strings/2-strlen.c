@@ -4,12 +4,12 @@
  * @s: string to be counted
  * Return: length of a string
  */
-int _strlen(char *s);
+int _strlen(char *s)
 {
 	int i;
-	int count = 0;
+	int count = 0
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; s[i] = '\s'; i++)
 		count++;
 	return (0);
 }
