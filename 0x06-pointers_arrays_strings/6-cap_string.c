@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * cap_string - Entry point
@@ -6,7 +7,7 @@
  * Return: return a pointer to the capitalized string
  */
 
-char *cap_string(char *)
+char *cap_string(char *str)
 {
 	int index = 0;
 
@@ -14,7 +15,8 @@ char *cap_string(char *)
 	{
 		while (!(str[index] >= 'a' && str[index] <= 'z'))
 			index++;
-		if (str[index] - 1) == ' ' ||
+		if
+		   (str[index] - 1) == ' ' ||
 		   (str[index] - 1) == '\t' ||
 		   (str[index] - 1) == '\n' ||
 		   (str[index] - 1) == ',' ||
