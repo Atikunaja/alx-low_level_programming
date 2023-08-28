@@ -3,21 +3,21 @@
 /**
  * _strspn - Get the length of a prefix substring
  * @s: string to search from
- * @accept: input
+ * @accept: string to search
  * Return:number of characters matched
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i;
+	int i, j;
 
-	while (*s)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (i = 0; accept[i]; i++)
+		for (j = 0; s[i] != accept[j]; j++)
 		{
-		if (*s == accept[i])
-			return (s);
+			if (accept[j] == '\0')
+				return (i);
 		}
-	s++;
-	}
-	return ('\0');
+
+	}	
+	return (0);
 }
