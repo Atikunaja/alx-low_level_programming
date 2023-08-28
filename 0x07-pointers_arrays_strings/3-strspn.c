@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strspn.s - Get the length of a prefix substring
+ * _strspn - Get the length of a prefix substring
  * @s: string to search from
- * @accept: string to search
+ * @accept: input
  * Return:number of characters matched
  */
 unsigned int _strspn(char *s, char *accept)
@@ -12,7 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (*s)
 	{
-		for (i = 0; accept[i]; i++ )
+		for (i = 0; accept[i]; i++)
 		{
 		if (*s == accept[i])
 			return (s);
