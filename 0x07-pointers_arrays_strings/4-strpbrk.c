@@ -5,8 +5,8 @@
  * @accept: input
  * Return: Always 0 (Success)
  */
-unsigned int *_strpbrk(char *s, char *accept)
-{	
+char *_strpbrk(char *s, char *accept)
+{
 	unsigned int n = 0;
 
 	while (*s)
@@ -25,5 +25,5 @@ unsigned int *_strpbrk(char *s, char *accept)
 		break;
 	s++;
 	}
-	return (n);
+	return (s);
 }
