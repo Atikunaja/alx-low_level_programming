@@ -2,18 +2,18 @@
 /**
  * _sqrt_a - the natural square root of a number
  * @a: input number
- * @n: iterator
+ * @b: iterator
  * Return: square root or -1
  */
-int _sqrt_a(int n)
+int _sqrt_a(int a, int b)
 {
-	if (n * n == a)
-		return (n);
-	else if (n * n > a)
+	if (b * b == a)
+		return (b);
+	else if (b * b > a)
 	{
 		return (-1);
 	}
-	return (sqrt_a(a, b + 1));
+	return (_sqrt_a(a, b + 1));
 }
 /**
  * _sqrt_recursion - Sqrt root of a number
