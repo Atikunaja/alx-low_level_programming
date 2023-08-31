@@ -8,11 +8,11 @@
 int prime_a(int a, int b)
 {
 	if
-		(a <= 1 || (a != b && n % b == 0));
+		(a <= 1 || (a != b && a % b == 0))
 	{
 			return (0);
 	}
-	else if (a == b;)
+	if (a == b)
 	{
 		return (1);
 	}
