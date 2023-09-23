@@ -1,7 +1,7 @@
 #include <stdio.h>
 void first(void) __attribute__((constructor));
 /**
- * first _ prints a sentence before the main function is constructed
+ * first _ prints the first sentence
  */
 void first(void)
 {
