@@ -5,7 +5,7 @@
  * @b: input 2
  * Return: a * b
  */
-int _isdigit(int c)
+int mul(int a, int b)
 {
-        return (a * b);
+	return (a * b);
 }
