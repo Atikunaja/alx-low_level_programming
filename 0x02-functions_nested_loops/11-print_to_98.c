@@ -1,26 +1,42 @@
 #include "main.h"
+#include <stdio.h>
 /**
- *jack_bauer - prints every minute of the day of Jack Bauer
- * starting from 00:00 to 23:59
+ * print_to_98 - print a program to 98
+ * @n: The number to start printing
+ * Return: Always 0.
  */
-void jack_bauer(void)
+void print_to_98(int n)
 {
-	int i, j;
-
-	i = 0;
-	while (i < 24)
+	if (n <= 98)
 	{
-		j = 0;
-		while (j < 60)
+		for (; n <= 98; n++)
 		{
-			_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
-			_putchar(':');
-			_putchar((j / 10) + '0');
-			_putchar((j % 10) + '0');
-			_putchar('\n');
-			j++;
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
 		}
-		i++;
+	}
+	else
+	{
+		for (; n >= 98; n--)
+		{
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
+		}
 	}
 }
