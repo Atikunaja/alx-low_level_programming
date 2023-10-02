@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdef.h>
-#include <stdio.h>
 
 /**
  * create_file - Creates a file.
