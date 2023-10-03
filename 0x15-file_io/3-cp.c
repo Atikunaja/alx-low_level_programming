@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
 		if (from == -1 || r == -1)
 		{
 			dprintf(STDERR_FILENO,
-					"Error: Can't write to %s\n", argv[2]);
+					"Error: Can't read to test_folder/textfile  %s\n", argv[2]);
 			free(buffer);
 			exit(98);
 		}
@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
 		if (to == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO,
-					"Error: Can't write to %s\n", argv[2]);
+					"Error: Can't write to test_folder/textfile %s\n", argv[2]);
 					exit(99);
 		}
 		r = read(from, buffer, 1024);
