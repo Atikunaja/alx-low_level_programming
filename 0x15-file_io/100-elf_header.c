@@ -61,7 +61,6 @@ void print_magic(unsigned char *e_ident)
 	}
 	else
 		  printf(" ");
-	}
 }
 
 /**
@@ -231,7 +230,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 	{
-		e_entry = ((e_entry << 8) 0xFF00FF00) | ((e_entry >> 8) & 0xFF00FF);
+		e_entry = ((e_entry << 8) & 0xFF00FF00) | ((e_entry >> 8) & 0xFF00FF);
 		e_entry = (e_entry << 16) | (e_entry >> 16);
 	}
 	if (e_ident[EI_CLASS] == ELFCLASS32)
@@ -247,7 +246,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
  */
 void close_elf(int elf)
 {
-	if (close(elf) == -1
+	if (close(elf) == -1)
 	{
 	  dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", elf);
 	  exit(98);
