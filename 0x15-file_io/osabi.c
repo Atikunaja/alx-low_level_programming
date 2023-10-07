@@ -1,4 +1,6 @@
 #include "elf_header.h"
+#include "100-main.c"
+
 /**
  * print_osabi - Prints the OS/ABI of an ELF header.
  * @e_ident: A pointer to an array containing the ELF version.
