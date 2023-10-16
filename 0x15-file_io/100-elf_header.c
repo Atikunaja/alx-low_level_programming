@@ -237,14 +237,17 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
  * @elf: The file descriptor of the ELF file.
  *
  * Description: If the file cannot be closed - exit code 98.
- */
+ */ 
+
 void close_elf(int elf)
 {
 	if (close(elf) == -1)
+		close_elf ();
 	{
-		dprintf(STDERR_FILENO,
+	 	dprintf(STDERR_FILENO,
 			"Error: Can't close fd %d\n", elf);
 		exit(98);
+
 	}
 }
 

@@ -1,5 +1,5 @@
-#ifndef _ELF_HEADER_H_
-#define _ELF_HEADER_H_
+#ifndef ELF_HEADER_H_
+#define ELF_HEADER_H_
 
 #include <elf.h>
 #include <sys/types.h>
