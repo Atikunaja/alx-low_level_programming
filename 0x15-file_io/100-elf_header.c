@@ -1,4 +1,5 @@
-#include <elf.h> 
+#include <elf.h>
+#include <stddef.h>
  /**
   * check_elf - Checks if a file is an ELF file.
   * @e_ident: A pointer to an array containing the ELF magic numbers.
@@ -45,22 +46,22 @@ void print_magic(unsigned char *e_ident)
   }
 }
 
- /** 
-  * print_class - Prints the class of an ELF header. 
-  * @e_ident: A pointer to an array containing the ELF class. 
-  */ 
- void print_class(unsigned char *e_ident) 
- { 
-         printf("  Class:                             "); 
-  
-         switch (e_ident[EI_CLASS]) 
-         { 
-         case ELFCLASSNONE: 
-                 printf("none\n"); 
-                 break; 
-         case ELFCLASS32: 
-                 printf("ELF32\n"); 
-                 break; 
+ /**
+  * print_class - Prints the class of an ELF header.
+  * @e_ident: A pointer to an array containing the ELF class.
+  */
+void print_class(unsigned char *e_ident)
+{
+	printf("  Class:                             ");
+ 
+	switch (e_ident[EI_CLASS])
+	{
+	  case ELFCLASSNONE:
+		  printf("none\n");
+		  break;
+	  case ELFCLASS32:
+		  printf("ELF32\n");
+		  break;
          case ELFCLASS64: 
                  printf("ELF64\n"); 
                  break; 
